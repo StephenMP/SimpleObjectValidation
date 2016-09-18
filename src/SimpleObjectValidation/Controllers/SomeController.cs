@@ -13,7 +13,7 @@ namespace SimpleObjectValidation.Controllers
     {
         [HttpPost]
         [ValidateModelState]
-        public async Task<IActionResult> SomePostMethod([FromBody] SomeModel someModel)
+        public IActionResult SomePostMethod([FromBody] SomeModel someModel)
         {
            //Do something with someModel
 
